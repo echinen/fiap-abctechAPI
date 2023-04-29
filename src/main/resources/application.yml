@@ -1,0 +1,6 @@
+server:
+  port: 80
+
+build_name: @project.name@
+build_version: @project.version@
+
