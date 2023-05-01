@@ -3,6 +3,7 @@ package br.com.fiap.abctechapi.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.TypeAlias;
 
 import javax.persistence.*;
 
@@ -10,6 +11,7 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "assistances")
 public class Assistance {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
