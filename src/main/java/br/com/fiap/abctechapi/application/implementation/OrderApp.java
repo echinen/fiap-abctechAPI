@@ -20,7 +20,7 @@ public class OrderApp implements IOrderApp {
     }
 
     @Override
-    public void createOrder(OrderDto orderDto) {
+    public void createOrder(OrderDto orderDto) throws Exception{
         Order order = new Order();
         order.setOperatorId(orderDto.getOperatorId());
         order.setStartOrderLocation(new OrderLocation(null, orderDto.getStart().getLatitude(), orderDto.getStart().getLongitude(), new Timestamp(orderDto.getStart().getDate().getTime())));

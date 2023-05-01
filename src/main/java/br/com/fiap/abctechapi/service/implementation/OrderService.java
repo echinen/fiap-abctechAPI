@@ -23,11 +23,15 @@ public class OrderService implements IOrderService {
     }
 
     @Override
-    public void saveOrder(Order order, List<Long> assists) {
+    public void saveOrder(Order order, List<Long> assists) throws Exception {
         ArrayList<Assistance> assistanceList = new ArrayList<>();
         assists.forEach(id -> {
             Assistance assistance = assistanceRepository.findById(id).orElseThrow();
         });
+
+        if (assistanceList.isEmpty()) {
+            throw new Exception();
+        }
 
         order.setAssists(assistanceList);
 
