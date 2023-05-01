@@ -10,7 +10,7 @@ phases:
   post_build:
     commands:
       - echo "Post building..."
-      - mv target/*.war ./Root.war
+      - mv target/*.war ./ROOT.war
 artifacts:
   files:
-    - Root.war
+    - ROOTt.war
