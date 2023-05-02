@@ -13,4 +13,4 @@ phases:
       - mv target/*.war ./ROOT.war
 artifacts:
   files:
-    - ROOTt.war
+    - ROOT.war
