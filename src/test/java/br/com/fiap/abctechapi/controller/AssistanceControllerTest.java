@@ -25,7 +25,7 @@ public class AssistanceControllerTest {
     @BeforeEach
     private void init() {
         MockitoAnnotations.openMocks(this);
-        assistanceController = new AssistanceController(assistanceApp);
+         assistanceController = new AssistanceController(assistanceApp);
     }
 
     @Test
